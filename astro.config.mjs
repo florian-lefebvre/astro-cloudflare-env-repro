@@ -12,7 +12,7 @@ export default defineConfig({
           access: 'secret',
         }),
       },
-      validateSecrets: true,
+      // validateSecrets: true,
     },
   },
   output: 'server',
