@@ -9,8 +9,9 @@ const fn = () => {
 };
 
 export const onRequest = defineMiddleware(async (context, next) => {
+  const { FOO } = await import("astro:env/server")
   // whatever();
   fn();
-  // console.log("Hi from middleware", { FOO });
+  console.log("Hi from middleware", { FOO });
   return await next();
 });
