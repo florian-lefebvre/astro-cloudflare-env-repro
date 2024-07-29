@@ -1,5 +1,4 @@
 globalThis.process ??= {}; globalThis.process.env ??= {};
-import { F as FOO } from './server_GbkxczKm.mjs';
 import { A as AstroError, R as ResponseSentError } from './astro/env-setup_C7zdctQz.mjs';
 
 /*!
@@ -513,16 +512,4 @@ function defineMiddleware(fn) {
   return fn;
 }
 
-const onRequest$1 = defineMiddleware(async (context, next) => {
-  console.log(process.env);
-  console.log("Hi from middleware", { FOO });
-  return await next();
-});
-
-const onRequest = sequence(
-	
-	onRequest$1
-	
-);
-
-export { AstroCookies as A, defineMiddleware as d, onRequest as o, sequence as s };
+export { AstroCookies as A, defineMiddleware as d, sequence as s };

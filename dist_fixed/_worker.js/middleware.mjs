@@ -1,2 +1,2 @@
 globalThis.process ??= {}; globalThis.process.env ??= {};
-export { o as onRequest } from './chunks/_astro-internal_middleware_DvVktIYq.mjs';
+export { o as onRequest } from './chunks/manual_fix.mjs';
